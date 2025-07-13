@@ -19,10 +19,19 @@
         </div>
     </header>
     <nav class="main-nav">
+      <div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links">
         <a href="index.html">Ana Sayfa</a>
-        <a href="tutanTahminler.html">Tahminler</a>
+        <a href="gunlukTahminler.html">Tahminler</a>
+        <a href="tutanTahminler.html">Tutan Tahminler</a>
         <a href="iletisim.html">İletişim</a>
+      </div>
     </nav>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.main-nav').classList.toggle('active');
+      }
+    </script>
     <main class="content">
       <section class="predictions">
           <h2>GÜNLÜK AT YARIŞI TAHMİNLERİ</h2>
