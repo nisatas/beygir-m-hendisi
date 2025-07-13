@@ -19,7 +19,18 @@
         </div>
     </header>
     <nav class="main-nav">
-      <div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="mobile-menu-icon" onclick="openMenu()">&#9776;</div>
+      <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <span class="mobile-menu-close" onclick="closeMenu()">&times;</span>
+        </div>
+        <div class="mobile-menu-links">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="gunlukTahminler.html">Tahminler</a>
+          <a href="tutanTahminler.html">Tutan Tahminler</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+      </div>
       <div class="nav-links">
         <a href="index.html">Ana Sayfa</a>
         <a href="gunlukTahminler.html">Tahminler</a>
@@ -77,8 +88,11 @@
     <div class="footer-copy">© 2025 Beygir Mühendisi</div>
   </footer>
   <script>
-    function toggleMenu() {
-      document.querySelector('.main-nav').classList.toggle('active');
+    function openMenu() {
+      document.getElementById('mobileMenu').classList.add('active');
+    }
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('active');
     }
   </script>
 </body>
