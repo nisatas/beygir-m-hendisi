@@ -327,3 +327,25 @@ body {
     font-size: 1.1rem;
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+    .content,
+    .predictions,
+    .contact-section,
+    .tutan-section {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .contact-section,
+    .tutan-section {
+        padding: 16px 4px !important;
+    }
+    body, .content, .predictions, .contact-section, .tutan-section {
+        font-size: 1.05rem;
+    }
+}
